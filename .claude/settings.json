@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "videomaker": {
+      "source": { "source": "github", "repo": "JoseD100801/videomaker" }
+    }
+  },
+  "enabledPlugins": {
+    "videomaker@videomaker": true
+  }
+}

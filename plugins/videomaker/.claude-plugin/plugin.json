@@ -1,0 +1,10 @@
+{
+  "name": "videomaker",
+  "displayName": "Creador de videos",
+  "version": "4.0.0",
+  "description": "Sistema para crear videos y reels por fases con hyperframes y GSAP: guion, gancho, estética (catálogo de 108), construcción parte por parte con vista previa web y MP4 solo con aprobación.",
+  "author": { "name": "JoseD100801", "url": "https://github.com/JoseD100801" },
+  "homepage": "https://github.com/JoseD100801/videomaker",
+  "repository": "https://github.com/JoseD100801/videomaker",
+  "keywords": ["video", "reels", "motion", "hyperframes", "gsap", "estéticas"]
+}

@@ -1,0 +1,32 @@
+diff --git a/scripts/edit.py b/scripts/edit.py
+index 8c843c3..37366ac 100644
+--- a/scripts/edit.py
++++ b/scripts/edit.py
+@@ -135,7 +135,7 @@ def edit_with_urllib(image_path, instruction, model_name, image_size, output_pat
+         },
+     }
+     if image_size:
+-        payload["generationConfig"]["imageSize"] = image_size.upper()
++        payload["generationConfig"]["imageConfig"] = {"imageSize": image_size.upper()}
+ 
+     data = json.dumps(payload).encode("utf-8")
+     req = urllib.request.Request(
+diff --git a/scripts/generate.py b/scripts/generate.py
+index f31b3ea..865b971 100644
+--- a/scripts/generate.py
++++ b/scripts/generate.py
+@@ -139,8 +139,13 @@ def generate_with_urllib(prompt, model_name, aspect_ratio, image_size, output_pa
+             "responseModalities": ["IMAGE"],
+         },
+     }
++    image_config = {}
++    if aspect_ratio:
++        image_config["aspectRatio"] = aspect_ratio
+     if image_size:
+-        payload["generationConfig"]["imageSize"] = image_size.upper()
++        image_config["imageSize"] = image_size.upper()
++    if image_config:
++        payload["generationConfig"]["imageConfig"] = image_config
+ 
+     data = json.dumps(payload).encode("utf-8")
+     req = urllib.request.Request(
