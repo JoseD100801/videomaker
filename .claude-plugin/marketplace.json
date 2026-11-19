@@ -22,7 +22,7 @@
       "displayName": "HyperFrames (HeyGen)",
       "source": {
         "source": "git-subdir",
-        "url": "heygen-com/hyperframes",
+        "url": "https://github.com/heygen-com/hyperframes.git",
         "path": "skills"
       },
       "description": "Motor de video del sistema: las 6 skills base de HyperFrames (hyperframes, hyperframes-cli, hyperframes-registry, media-use, reverse-any-video, style-sampling). Se descarga solo la carpeta skills del repo oficial de HeyGen.",
@@ -41,8 +41,8 @@
       "name": "gsap-skills",
       "displayName": "GSAP skills (oficiales)",
       "source": {
-        "source": "github",
-        "repo": "greensock/gsap-skills"
+        "source": "url",
+        "url": "https://github.com/greensock/gsap-skills.git"
       },
       "description": "Skills oficiales de GreenSock: gsap-core, timeline, plugins, utils, performance y más. GSAP es el motor de animación dentro de hyperframes.",
       "license": "MIT",
@@ -53,7 +53,7 @@
       "displayName": "3Dviz Pro Max (extra opcional)",
       "source": {
         "source": "git-subdir",
-        "url": "viettranx/3dviz-pro-max",
+        "url": "https://github.com/viettranx/3dviz-pro-max.git",
         "path": "skills"
       },
       "description": "Extra opcional: objetos 3D protagonistas en una escena (three.js). Instálalo solo si lo vas a usar.",
@@ -67,8 +67,8 @@
       "name": "anatomy",
       "displayName": "Anatomy (extra opcional)",
       "source": {
-        "source": "github",
-        "repo": "wheresryan22/anatomy"
+        "source": "url",
+        "url": "https://github.com/wheresryan22/anatomy.git"
       },
       "description": "Extra opcional: figuras isométricas en SVG que explican cómo funciona algo por dentro. Instálalo solo si lo vas a usar.",
       "license": "MIT",
