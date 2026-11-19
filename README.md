@@ -9,7 +9,7 @@ Necesitas [Claude Code](https://code.claude.com), git y Node.js. Recomendado: ff
 Dentro de Claude Code:
 
 ```
-/plugin marketplace add JoseD100801/videomaker
+/plugin marketplace add https://github.com/JoseD100801/videomaker.git
 /plugin install videomaker@videomaker
 ```
 
