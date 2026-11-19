@@ -1,0 +1,81 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "videomaker",
+  "description": "Creador de videos y reels para Claude Code: el sistema por fases, el catálogo de 108 estéticas y las skills de animación que usa.",
+  "owner": {
+    "name": "JoseD100801",
+    "url": "https://github.com/JoseD100801"
+  },
+  "plugins": [
+    {
+      "name": "videomaker",
+      "source": "./plugins/videomaker",
+      "description": "Sistema para crear videos y reels por fases (guion, gancho, estética, hyperframes parte por parte con vista previa web, MP4 solo con aprobación), catálogo de 108 estéticas y envoltorio de claude-banana.",
+      "category": "productivity",
+      "dependencies": [
+        "hyperframes",
+        "gsap-skills"
+      ]
+    },
+    {
+      "name": "hyperframes",
+      "displayName": "HyperFrames (HeyGen)",
+      "source": {
+        "source": "git-subdir",
+        "url": "heygen-com/hyperframes",
+        "path": "skills"
+      },
+      "description": "Motor de video del sistema: las 6 skills base de HyperFrames (hyperframes, hyperframes-cli, hyperframes-registry, media-use, reverse-any-video, style-sampling). Se descarga solo la carpeta skills del repo oficial de HeyGen.",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/heygen-com/hyperframes",
+      "skills": [
+        "./hyperframes",
+        "./hyperframes-cli",
+        "./hyperframes-registry",
+        "./media-use",
+        "./reverse-any-video",
+        "./style-sampling"
+      ]
+    },
+    {
+      "name": "gsap-skills",
+      "displayName": "GSAP skills (oficiales)",
+      "source": {
+        "source": "github",
+        "repo": "greensock/gsap-skills"
+      },
+      "description": "Skills oficiales de GreenSock: gsap-core, timeline, plugins, utils, performance y más. GSAP es el motor de animación dentro de hyperframes.",
+      "license": "MIT",
+      "homepage": "https://github.com/greensock/gsap-skills"
+    },
+    {
+      "name": "3dviz-pro-max",
+      "displayName": "3Dviz Pro Max (extra opcional)",
+      "source": {
+        "source": "git-subdir",
+        "url": "viettranx/3dviz-pro-max",
+        "path": "skills"
+      },
+      "description": "Extra opcional: objetos 3D protagonistas en una escena (three.js). Instálalo solo si lo vas a usar.",
+      "license": "MIT",
+      "homepage": "https://github.com/viettranx/3dviz-pro-max",
+      "skills": [
+        "./3dviz-pro-max"
+      ]
+    },
+    {
+      "name": "anatomy",
+      "displayName": "Anatomy (extra opcional)",
+      "source": {
+        "source": "github",
+        "repo": "wheresryan22/anatomy"
+      },
+      "description": "Extra opcional: figuras isométricas en SVG que explican cómo funciona algo por dentro. Instálalo solo si lo vas a usar.",
+      "license": "MIT",
+      "homepage": "https://github.com/wheresryan22/anatomy",
+      "skills": [
+        "./"
+      ]
+    }
+  ]
+}
